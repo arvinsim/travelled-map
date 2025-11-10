@@ -1,7 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 import Map, { Source, Layer } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { useState } from 'react';
 import type {FeatureCollection} from 'geojson';
 
 import geojsonData from '@/data/my_travel.json';
@@ -20,15 +19,13 @@ const layerStyle = {
 };
 
 function RouteComponent() {
-  const [viewState, setViewState] = useState({
-    longitude: -100,
-    latitude: 40,
-    zoom: 3.5
-  });
-
   return (
     <Map
-      {...viewState}
+      initialViewState={{
+        longitude: -100,
+        latitude: 40,
+        zoom: 3.5 
+      }}
       style={{width: '100vw', height: '100vh'}}
       mapStyle="https://demotiles.maplibre.org/globe.json"
     >
