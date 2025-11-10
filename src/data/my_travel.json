@@ -27,10 +27,10 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [106.8272, -6.1751]
+        "coordinates": [115.2126, -8.6705]
       },
       "properties": {
-        "name": "Jakarta",
+        "name": "Bali",
         "country": "Indonesia"
       }
     },
@@ -42,6 +42,17 @@
       },
       "properties": {
         "name": "Kuala Lumpur",
+        "country": "Malaysia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.4846, 5.2632]
+      },
+      "properties": {
+        "name": "Penang",
         "country": "Malaysia"
       }
     },
@@ -115,11 +126,198 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [-77.0369, 38.9072]
+        "coordinates": [-118.2437, 34.0522]
       },
       "properties": {
-        "name": "Washington, D.C.",
+        "name": "Los Angeles",
         "country": "USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [124.6319, 8.4543]
+      },
+      "properties": {
+        "name": "Cagayan de Oro",
+        "country": "Philippines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [123.8854, 10.3157]
+      },
+      "properties": {
+        "name": "Cebu",
+        "country": "Philippines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [124.7144, 9.1678]
+      },
+      "properties": {
+        "name": "Camiguin",
+        "country": "Philippines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [124.2373, 9.8490]
+      },
+      "properties": {
+        "name": "Bohol",
+        "country": "Philippines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [125.6088, 7.0647]
+      },
+      "properties": {
+        "name": "Davao",
+        "country": "Philippines"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.3922, 7.8804]
+      },
+      "properties": {
+        "name": "Phuket",
+        "country": "Thailand"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [98.9853, 18.7883]
+      },
+      "properties": {
+        "name": "Chiang Mai",
+        "country": "Thailand"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [9.9937, 53.5511]
+      },
+      "properties": {
+        "name": "Hamburg",
+        "country": "Germany"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.6821, 50.1109]
+      },
+      "properties": {
+        "name": "Frankfurt",
+        "country": "Germany"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.5820, 48.1351]
+      },
+      "properties": {
+        "name": "Munich",
+        "country": "Germany"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.6602, 10.7626]
+      },
+      "properties": {
+        "name": "Ho Chi Minh",
+        "country": "Vietnam"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.7414, 1.4927]
+      },
+      "properties": {
+        "name": "Johor Bahru",
+        "country": "Malaysia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.2501, 2.1896]
+      },
+      "properties": {
+        "name": "Malacca",
+        "country": "Malaysia"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.0060, 40.7128]
+      },
+      "properties": {
+        "name": "New York City",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.8030, 23.5090]
+      },
+      "properties": {
+        "name": "Alishan",
+        "country": "Taiwan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [141.3545, 43.0618]
+      },
+      "properties": {
+        "name": "Hokkaido",
+        "country": "Japan"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.82, 1.35]
+      },
+      "properties": {
+        "name": "Singapore",
+        "country": "Singapore"
       }
     }
   ]
