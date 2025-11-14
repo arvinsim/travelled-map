@@ -319,6 +319,50 @@
         "name": "Singapore",
         "country": "Singapore"
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-74.4057, 40.0583]
+      },
+      "properties": {
+        "name": "New Jersey",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-75.1652, 39.9526]
+      },
+      "properties": {
+        "name": "Philadelphia",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-77.0369, 38.9072]
+      },
+      "properties": {
+        "name": "Washington",
+        "country": "USA"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-117.1611, 32.7157]
+      },
+      "properties": {
+        "name": "San Diego",
+        "country": "USA"
+      }
     }
   ]
 }
