@@ -1,39 +1,57 @@
 import { createFileRoute } from '@tanstack/react-router'
-import logo from '../logo.svg'
+import Map, { Source, Layer } from 'react-map-gl/maplibre';
+import 'maplibre-gl/dist/maplibre-gl.css';
+import type {FeatureCollection} from 'geojson';
+
+import geojsonData from '@/data/my_travel.json';
 
 export const Route = createFileRoute('/')({
   component: App,
 })
 
+
+const layerStyle = {
+  id: 'point',
+  type: 'circle' as const,
+  paint: {
+    'circle-radius': 10,
+    'circle-color': '#EA4335'
+  }
+};
+
+const labelLayerStyle = {
+  id: 'point-labels',
+  type: 'symbol' as const,
+  layout: {
+    'text-field': ['concat', ['get', 'name'], ', ', ['get', 'country']] as any,
+    'text-font': ['Open Sans Bold', 'Open Sans Regular'],
+    'text-size': 13,
+    'text-offset': [0, 1.5] as [number, number],
+    'text-anchor': 'top' as const
+  },
+  paint: {
+    'text-color': '#000000',
+    'text-halo-color': '#FFFFFF',
+    'text-halo-width': 3,
+    'text-halo-blur': 1
+  }
+};
+
 function App() {
   return (
-    <div className="text-center">
-      <header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
-        <img
-          src={logo}
-          className="h-[40vmin] pointer-events-none animate-[spin_20s_linear_infinite]"
-          alt="logo"
-        />
-        <p>
-          Edit <code>src/routes/index.tsx</code> and save to reload.
-        </p>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <a
-          className="text-[#61dafb] hover:underline"
-          href="https://tanstack.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn TanStack
-        </a>
-      </header>
-    </div>
+     <Map
+      initialViewState={{
+        longitude: 120.9842,
+        latitude: 14.5995,
+        zoom: 3.5 
+      }}
+      style={{width: '100vw', height: '100vh'}}
+      mapStyle="https://demotiles.maplibre.org/globe.json"
+    >
+       <Source id="my-data" type="geojson" data={geojsonData as FeatureCollection}>
+        <Layer {...layerStyle} />
+        <Layer {...labelLayerStyle} />
+      </Source>
+    </Map>
   )
 }
