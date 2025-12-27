@@ -6,8 +6,8 @@ import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  base: '/travelled-map/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/travelled-map/' : '/',
   plugins: [
     tanstackRouter({
       target: 'react',
@@ -21,4 +21,4 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-})
+}))
